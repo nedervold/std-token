@@ -1,0 +1,29 @@
+Name:                   std-token
+Version:                0.0.0
+Author:                 Eric Nedervold<nedervoldsoftware@gmail.com>
+Maintainer:             Eric Nedervold<nedervoldsoftware@gmail.com>
+-- License:                BSD3
+-- License-File:           LICENSE
+Copyright:		(c) 2017 Eric Nedervold
+Stability:              alpha
+Homepage:               http://github.com/nedervold/std-token
+Bug-Reports:            http://github.com/nedervold/std-token/issues
+-- Category:
+-- Synopsis:               
+-- Description:            
+Cabal-Version:          >= 1.10
+Build-Type:             Simple
+Extra-Source-Files:     changelog
+
+Library
+  Default-Language:     Haskell2010
+  HS-Source-Dirs:       src
+  GHC-Options:          -Wall
+  Exposed-Modules:      Text.StdToken
+--  Other-Modules:        Text.StdToken.Internal
+  Build-Depends:        base >= 4 && < 5
+                      , lens
+
+Source-Repository head
+  Type:                 git
+--  Location:             
