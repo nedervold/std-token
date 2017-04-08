@@ -17,6 +17,7 @@ data StdToken ty txt deco = Token {
     _tokenText :: txt,
     _tokenDeco :: deco
     }
+    deriving (Eq, Ord, Show)
 
 makeLenses ''StdToken
 
@@ -30,4 +31,3 @@ instance Bifunctor (StdToken ty) where
 -- \"posn\" wrapper.
 mkAlexToken :: ty -> posn -> String -> StdToken ty String posn
 mkAlexToken ty posn txt = Token ty txt posn
-
