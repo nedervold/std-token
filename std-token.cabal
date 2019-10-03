@@ -1,29 +1,40 @@
-Name:                   std-token
-Version:                0.0.0
-Author:                 Eric Nedervold<nedervoldsoftware@gmail.com>
-Maintainer:             Eric Nedervold<nedervoldsoftware@gmail.com>
--- License:                BSD3
--- License-File:           LICENSE
-Copyright:		(c) 2017 Eric Nedervold
-Stability:              alpha
-Homepage:               http://github.com/nedervold/std-token
-Bug-Reports:            http://github.com/nedervold/std-token/issues
--- Category:
--- Synopsis:               
--- Description:            
-Cabal-Version:          >= 1.10
-Build-Type:             Simple
-Extra-Source-Files:     changelog
+cabal-version: 1.12
 
-Library
-  Default-Language:     Haskell2010
-  HS-Source-Dirs:       src
-  GHC-Options:          -Wall
-  Exposed-Modules:      Text.StdToken
---  Other-Modules:        Text.StdToken.Internal
-  Build-Depends:        base >= 4 && < 5
-                      , lens
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c3bfb898e4f8ff4442d30cc0b0507aa2cb68b4127adfa1a34abb9507ee7f6700
 
-Source-Repository head
-  Type:                 git
---  Location:             
+name:           std-token
+version:        0.1.0.0
+synopsis:       A datatype for tokens
+description:    Please see the README on GitHub at <https://github.com/nedervold/std-token#readme>
+category:       Data
+homepage:       https://github.com/nedervold/std-token#readme
+bug-reports:    https://github.com/nedervold/std-token/issues
+author:         Eric Nedervold
+maintainer:     nedervoldsoftware@gmail.com
+copyright:      2019 Eric Nedervold
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/nedervold/std-token
+
+library
+  exposed-modules:
+      Text.StdToken
+  other-modules:
+      Paths_std_token
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , lens ==4.17.1
+  default-language: Haskell2010

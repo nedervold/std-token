@@ -7,8 +7,8 @@ module Text.StdToken(
     tokenDeco,
     mkAlexToken) where
 
-import Control.Lens.TH
-import Data.Bifunctor
+import Control.Lens.TH(makeLenses)
+import Data.Bifunctor(Bifunctor(..))
 
 -- | A datatype for tokens.  Type synonyms will probably be used to
 -- refer to its specializations.

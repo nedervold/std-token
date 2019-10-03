@@ -1,0 +1,27 @@
+name:                std-token
+version:             0.1.0.0
+github:              "nedervold/std-token"
+license:             BSD3
+author:              "Eric Nedervold"
+maintainer:          "nedervoldsoftware@gmail.com"
+copyright:           "2019 Eric Nedervold"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+synopsis:            A datatype for tokens
+category:            Data
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/nedervold/std-token#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- lens == 4.17.1
+
+library:
+  source-dirs: src
