@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c3bfb898e4f8ff4442d30cc0b0507aa2cb68b4127adfa1a34abb9507ee7f6700
+-- hash: 07555178221156a5f9a38a3fd9580e760c0b4226083982c11c168328ddf97ccd
 
 name:           std-token
 version:        0.1.0.0
@@ -36,5 +36,5 @@ library
       src
   build-depends:
       base >=4.7 && <5
-    , lens ==4.17.1
+    , microlens-th
   default-language: Haskell2010
