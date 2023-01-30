@@ -1,14 +1,9 @@
-.PHONY : all clean hindent
-
-HINDENT = hindent --line-length 76 --sort-imports
-
+.PHONY : all
 all :
 	stack build
 
-hindent :
-	find src -name '*.hs' -exec $(HINDENT) \{} \;
-
-clean : hindent
-	stack clean
+.PHONY : clean
+clean :
 	find . -name '*~' -delete
 	find . -name '#*' -delete
+	stack clean
