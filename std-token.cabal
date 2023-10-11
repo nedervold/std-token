@@ -1,13 +1,13 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.4.
+-- This file has been generated from package.yaml by hpack version 0.35.1.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 07555178221156a5f9a38a3fd9580e760c0b4226083982c11c168328ddf97ccd
+-- hash: 89fd066cb103b9d644cfa47c99c2364e76e9f7d7823cd525f5d5b0e0bb9df690
 
 name:           std-token
-version:        0.1.0.0
+version:        0.2.0.0
 synopsis:       A datatype for tokens
 description:    Please see the README on GitHub at <https://github.com/nedervold/std-token#readme>
 category:       Data

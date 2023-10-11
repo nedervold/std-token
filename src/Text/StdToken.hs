@@ -28,7 +28,7 @@ data StdToken ty txt deco =
     , _tokenText :: txt
     , _tokenDeco :: deco
     }
-  deriving (Eq, Data, Generic, Ord, Show, Typeable)
+  deriving (Data, Generic, Show, Typeable)
 
 makeLenses ''StdToken
 
